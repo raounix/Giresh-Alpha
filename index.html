@@ -70,6 +70,48 @@
         background-position: center center;
     }
 </style>
+<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body mx-3">
+                <div class="md-form mb-5">
+                    <i class="fas fa-user prefix grey-text"></i>
+                    <input type="text" id="form34" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="form34">اسم شما</label>
+                </div>
+
+                <div class="md-form mb-5">
+                    <i class="fas fa-envelope prefix grey-text"></i>
+                    <input type="email" id="form29" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="form29">ایمیل شما</label>
+                </div>
+
+                <div class="md-form mb-5">
+                    <i class="fas fa-tag prefix grey-text"></i>
+                    <input type="text" id="form32" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="form32">موضوع</label>
+                </div>
+
+                <div class="md-form">
+                    <i class="fas fa-pencil prefix grey-text"></i>
+                    <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                    <label data-error="wrong" data-success="right" for="form8">پیام شما</label>
+                </div>
+
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button class="btn btn-unique">ارسال <i class="fas fa-paper-plane-o ml-1"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
 <!--Navbar-->
 <nav class="navbar  navbar-expand-lg navbar-dark stylish-color-dark fixed-top scrolling-navbar">
     <a class="navbar-brand order-md-last" href="#">گیرش</a>
@@ -82,20 +124,20 @@
         </a>
         <ul class="navbar-nav  ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#">تماس با ما<i class="fas fa-address-book"></i></a>
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#modalContactForm">تماس با ما<i class="fas fa-address-book"></i></a>
             </li>
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="#">قوانین<i class="fas fa-tasks"></i></a>-->
+<!--            </li>-->
             <li class="nav-item">
                 <a class="nav-link" href="about.html" >درباره ما<i class="fas fa-info-circle"></i></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">قوانین<i class="fas fa-tasks"></i></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLRForm">ثبت نام<i class="fas fa-user-plus"></i></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLRForm">ورود<i class="fas fa-unlock"></i></a>
-            </li>
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLRForm">ثبت نام<i class="fas fa-user-plus"></i></a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLRForm">ورود<i class="fas fa-unlock"></i></a>-->
+<!--            </li>-->
         </ul>
 
     </div>
@@ -129,10 +171,10 @@
                             <p class="font-weight-bold text-uppercase py-4">تنوع در رنگ با بالاترین کیفیت</p>
                         </li>
                         <li class="list-inline-item">
-                            <a  href="#" class="btn btn-unique btn-lg btn-rounded mr-0">ثبت نام</a>
+                            <a  href="#" class="btn btn-unique btn-lg btn-rounded mr-0">دکمه ۱</a>
                         </li>
                         <li class="list-inline-item">
-                            <a  href="#" class="btn btn-cyan btn-lg btn-rounded ml-0">ورود</a>
+                            <a  href="#" class="btn btn-cyan btn-lg btn-rounded ml-0">دکمه ۲</a>
                         </li>
                     </ul>
                 </div>
@@ -213,7 +255,7 @@
 
                         <!-- Card image -->
                         <div class="view view-cascade overlay">
-                            <img class="card-img-top" src="static/img/3.jpg" alt="Card image cap">
+                            <img class="card-img-top" src="static/img/s.jpg" alt="Card image cap">
                             <a href="#!">
                                 <div class="mask rgba-white-slight"></div>
                             </a>
@@ -281,7 +323,7 @@
 
                         <!-- Card image -->
                         <div class="view view-cascade overlay">
-                            <img class="card-img-top" src="static/img/unnamed.jpg" alt="Card image cap">
+                            <img class="card-img-top" src="static/img/s.jpg" alt="Card image cap">
                             <a href="#!">
                                 <div class="mask rgba-white-slight"></div>
                             </a>
